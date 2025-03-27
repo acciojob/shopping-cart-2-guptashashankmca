@@ -15,7 +15,7 @@ function addItem() {
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td data-ns-test="item-name">${name}</td>
-                <td data-ns-test="item-price">${price.toFixed(2)}</td>
+                <td data-ns-test="item-price">${price.toFixed(0)}</td>
             `;
             
             cartBody.appendChild(row);
