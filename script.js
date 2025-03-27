@@ -30,5 +30,5 @@ function addItem() {
             document.querySelectorAll('[data-ns-test="item-price"]').forEach(priceCell => {
                 total += parseFloat(priceCell.textContent);
             });
-            document.querySelector('[data-ns-test="grandTotal"]').textContent = total.toFixed(2);
+            document.querySelector('[data-ns-test="grandTotal"]').textContent = parseInt(total.toFixed(2));
         }
